@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/12345678/your-image.png" alt="File Manipulation Programs" width="400">
+  <img src="https://github.com/07Sushant/Shell-Programming/blob/main/Experiments/Experiment%203/IMG_20230829_010055.jpg" alt="File Manipulation Programs" width="400">
 </div>
 
 # File Manipulation Programs
