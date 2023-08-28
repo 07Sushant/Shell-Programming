@@ -29,5 +29,5 @@ This repository contains three simple C programs that demonstrate basic file man
 Feel free to explore and use these programs to understand fundamental file manipulation concepts using system calls in the C programming language.
 
 <div align="center">
-  Made with :heart: Sushant
+  Made with :heart: Sushant.
 </div>
