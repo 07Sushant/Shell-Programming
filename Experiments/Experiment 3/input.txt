@@ -1,0 +1,5 @@
+Dekho Bina Array Char ke Read ho raha file ka content 
+Working...............
+
+
+With this program, you can grasp how to read and display the contents of a file without using a character array. By using direct system calls, the program reads each byte of the 'input.txt' file and prints it on the console. Upon running the program, the console output will show the complete content of the file without using intermediate storage.

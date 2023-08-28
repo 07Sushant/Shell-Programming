@@ -1,0 +1,4 @@
+Hmm Output of Second half is here Bingo!
+
+
+"This program showcases the usage of system calls to copy the second half of a file. By opening the 'input.txt' file and skipping to the middle, it reads the remaining content and writes it to the 'output_second_half.txt' file. When you execute this program, you'll observe that 'output_second_half.txt' contains the latter part of the original input."
