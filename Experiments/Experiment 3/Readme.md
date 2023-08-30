@@ -1,5 +1,5 @@
 <div align="center">
-![Image](https://github.com/07Sushant/Shell-Programming/raw/main/Experiments/Experiment%203/img.png)
+![Thumbnail]([https://github.com/your-username/your-repo/raw/main/path/to/your/image.png](https://github.com/your-username/your-repo/raw/main/path/to/your/image.png))
 
 </div>
 
