@@ -1,5 +1,6 @@
 <div align="center">
-  <img src="[https://github.com/07Sushant/Shell-Programming/blob/main/Experiments/Experiment%203/IMG_20230829_010055.jpg](https://github.com/07Sushant/Shell-Programming/blob/main/Experiments/Experiment%203/sodapdf-converted%20(1).png)" alt="File Manipulation Programs" width="400">
+![Image](https://github.com/07Sushant/Shell-Programming/raw/main/Experiments/Experiment%203/img.png)
+
 </div>
 
 # File Manipulation Programs
