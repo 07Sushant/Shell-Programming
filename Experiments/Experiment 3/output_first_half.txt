@@ -1,3 +1,0 @@
-Hmm Output of first half is here Bingo!
-
-This program demonstrates how to use system calls in C to copy the first half of a file. It opens the 'input.txt' file, reads its content, and writes the first half to the 'output_first_half.txt' file. When you run the program, you'll see that the newly created 'output_first_half.txt' contains the initial portion of the input.

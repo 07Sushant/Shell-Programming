@@ -7,7 +7,7 @@ int main() {
     int output_fd;
     char input;
     
-    output_fd = open("console_input.txt", O_CREAT | O_WRONLY, 0644);
+    output_fd = open("Write in file.txt", O_CREAT | O_WRONLY, 0644);
     if (output_fd == -1) {
         perror("Apne file hi nahi banayi hai sir");
         return 1;

@@ -1,0 +1,6 @@
+Dekho Bina Array Char ke Read ho raha file ka content 
+USING SYSTEM CALL AND WHILE LOOP
+Working...............
+
+Isme File read kr ke console pe print hoga while loop se 
+Read kr ke content byte variable me then write use kr ke standard output console pr print krna
