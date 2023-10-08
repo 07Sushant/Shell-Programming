@@ -2,7 +2,7 @@
 #include <sys/types.h>
 #include <unistd.h>
 #include <stdlib.h>
-
+#include <sys/wait.h>
 int main() {
   pid_t pid;
 
@@ -20,7 +20,7 @@ int main() {
       perror("Error creating P4");
       return 1;
     } else if (pid == 0) {
-      printf("P4 created\n");
+      printf("P4 created (Orphan) \n");
       exit(0);
     } else {
       wait(NULL);
@@ -68,7 +68,7 @@ int main() {
         perror("Error creating P7");
         return 1;
       } else if (pid == 0) {
-        printf("P7 created\n");
+        printf("P7 created (Zombie) \n");
         while (1) {
           sleep(100);
         }
