@@ -1,42 +1,47 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <sys/types.h>
+#include <sys/wait.h>
 
 void createChildProcesses(int n) {
-    if (n <= 0) {
+    if (n == 0) {
         return;
     }
 
-    pid_t child_pid = fork();
+    for (int i = 0; i < (1 << n) - 1; i++) {
+        pid_t pid = fork();
+        if (pid == -1) {
+            perror("fork");
+            exit(EXIT_FAILURE);
+        }
+        if (pid == 0) {
+            // Child process
+            printf("Child process %d (PID: %d) created\n", i + 1, getpid());
+            break;  // Terminate the loop in the child process
+        }
+    }
 
-    if (child_pid < 0) {
-        perror("Fork failed");
-        exit(1);
-    } else if (child_pid == 0) {
-        // This is the child process
-        printf("Child process created with PID: %d\n", getpid());
-        createChildProcesses(n - 1);
-        exit(0);
-    } else {
-        // This is the parent process
-        wait(NULL); // Wait for the child to complete
+    // Parent process
+    for (int i = 0; i < (1 << n) - 1; i++) {
+        wait(NULL); // Wait for child processes to finish
     }
 }
 
 int main(int argc, char *argv[]) {
     if (argc != 2) {
-        printf("Usage: %s <n>\n", argv[0]);
-        return 1;
+        fprintf(stderr, "Usage: %s <n>\n", argv[0]);
+        return EXIT_FAILURE;
     }
 
     int n = atoi(argv[1]);
-
     if (n < 1) {
-        printf("Invalid input. Please provide a positive integer.\n");
-        return 1;
+        fprintf(stderr, "Please provide a positive integer value for n.\n");
+        return EXIT_FAILURE;
     }
 
-    createChildProcesses(n - 1); // We subtract 1 to create (2^n - 1) child processes
+    printf("Creating (2^%d - 1) = %d child processes...\n", n, (1 << n) - 1);
+    createChildProcesses(n);
 
-    return 0;
+    return EXIT_SUCCESS;
 }
