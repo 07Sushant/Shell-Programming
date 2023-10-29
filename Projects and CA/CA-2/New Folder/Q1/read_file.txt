@@ -1,0 +1,5 @@
+Code sahi chal raha apka
+
+
+----READING THE FILE USING SYSTEM CALL WITHOUT ARRAY and Char.
+
